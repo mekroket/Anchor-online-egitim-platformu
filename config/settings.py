@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "study",
     "account",
+    "ckeditor"
 ]
 
 MIDDLEWARE = [
@@ -125,10 +126,10 @@ STATICFILES_DIRS = [
 ]
 
 
-"""
+
 # ! CUSTOM MODEL
 AUTH_USER_MODEL = 'account.CustomUserModel'
-"""
+
 
 # ! MEDİA
 MEDİA_URL = '/media/'
