@@ -9,7 +9,7 @@ admin.site.register(KategoriModel)
 @admin.register(YazilarModel)
 class YazilarAdmin(admin.ModelAdmin):
     list_display =(
-        "baslik","olusturulma_tarihi","düzenlenme_tarihi","ücret"
+        "baslik","olusturulma_tarihi","düzenlenme_tarihi"
     )
     search_fields = ("baslik","icerik")
 
@@ -34,4 +34,4 @@ class EgitmenAdmin(admin.ModelAdmin):
     list_display = (
         "isim","resim","ünvan","tanıma"
     )
-    
+

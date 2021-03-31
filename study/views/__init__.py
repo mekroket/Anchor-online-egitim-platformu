@@ -1,5 +1,5 @@
 from .index import Anasayfa
-from .about import about
+from .about import Hakkımızda
 from .courses import Kurslar
 from .trainers import trainers
 from .articles import Makaleler

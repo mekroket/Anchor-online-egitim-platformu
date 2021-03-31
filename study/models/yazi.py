@@ -11,12 +11,12 @@ class YazilarModel(DateAbstractModel):
     slug = AutoSlugField(populate_from = "baslik",unique=True)
     kategoriler = models.ManyToManyField(KategoriModel,related_name="yazi")
     yazar = models.ForeignKey("account.CustomUserModel",related_name="yazilar",on_delete=models.CASCADE)
-    ücret = models.CharField(max_length=20)
+    
     
     class Meta:
         db_table ="Yazi"
         verbose_name = "Yazi"
-        verbose_name_plural  = "Yazilar"
+        verbose_name_plural  = "Kurslar"
 
     def __str__(self):
         return self.baslik
