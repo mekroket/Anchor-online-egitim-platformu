@@ -81,15 +81,15 @@
         </div>
 
         <div class="owl-carousel testimonials-carousel" data-aos="zoom-in" data-aos-delay="100">
-          {% for egitmen2 in egitmenler2  %}
+          {% for egitmen in egitmenler  %}
           <div class="testimonial-wrap">
             <div class="testimonial-item">
               <img src="{{egitmen.resim.url}}" class="testimonial-img" alt="">
-              <h3>{{egitmen2.isim}}</h3>
-              <h4>{{egitmen2.ünvan}}</h4>
+              <h3>{{egitmen.isim}}</h3>
+              <h4>{{egitmen.ünvan}}</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                {{egitmen2.icerik}}
+                {{egitmen.tanıma}}
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
