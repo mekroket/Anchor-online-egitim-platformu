@@ -20,8 +20,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-<<<<<<< HEAD
 
-=======
-######123456789
->>>>>>> 8c6f1c583d4616e8f16faa747ae1e54b6ba103ac
