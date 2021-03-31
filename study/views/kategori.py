@@ -1,11 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from django.db import models
-from study.models import YazilarModel,EgitmenModel
+from study.models import YazilarModel,EgitmenModel,KategoriModel
 from django.core.paginator import Paginator
 
-def Anasayfa(request):
+def Kategori(request, KategoriSlug):
+        kategori = get_object_or_404(KategoriModel , slug=KategoriSlug)
         yazilar = YazilarModel.objects.all()
-        egitmenler = EgitmenModel.objects.all()
         return render(request,"pages/index.html",context={
             "yazilar": yazilar,
             "egitmenler":egitmenler

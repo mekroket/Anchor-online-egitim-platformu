@@ -1,5 +1,5 @@
 from django.contrib import admin
-from study.models import KategoriModel,YazilarModel,YorumModel,İletisimModel
+from study.models import KategoriModel,YazilarModel,YorumModel,İletisimModel,EgitmenModel
 from ckeditor.fields import RichTextField
 
 
@@ -9,7 +9,7 @@ admin.site.register(KategoriModel)
 @admin.register(YazilarModel)
 class YazilarAdmin(admin.ModelAdmin):
     list_display =(
-        "baslik","olusturulma_tarihi","düzenlenme_tarihi"
+        "baslik","olusturulma_tarihi","düzenlenme_tarihi","ücret"
     )
     search_fields = ("baslik","icerik")
 
@@ -28,3 +28,10 @@ class İletisimAdmin(admin.ModelAdmin):
         "email","olusturulma_tarihi",
     )
     search_fields=("email",)
+
+@admin.register(EgitmenModel)
+class EgitmenAdmin(admin.ModelAdmin):
+    list_display = (
+        "isim","resim","ünvan","tanıma"
+    )
+    

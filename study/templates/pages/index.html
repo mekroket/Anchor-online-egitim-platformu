@@ -134,25 +134,25 @@
           <div class="col-lg-3 col-md-4">
             <div class="icon-box">
               <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Lorem Ipsum</a></h3>
+              <h3><a href="">Grafik Tasarım</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3><a href="">Dolor Sitema</a></h3>
+              <h3><a href="">Python</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="">Sed perspiciatis</a></h3>
+              <h3><a href="">Html ve Css</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box">
               <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-              <h3><a href="">Magni Dolores</a></h3>
+              <h3><a href="">Javascript</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
@@ -211,22 +211,23 @@
     <!-- ======= Popular Courses Section ======= -->
     
     <section id="popular-courses" class="courses">
+        
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Kurslar</h2>
           <p>Popüler Kurslar</p>
         </div>
-        {% for yazi in yazilar  %}
+        
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          {% for yazi in yazilar  %}
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="course-item">
               <img src="{{yazi.resim.url}}" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>{{yazi.kategoriler}}</h4>
-                  <p class="price">Ücretsiz</p>
+                  <h4>Yazılım</h4>
+                  <p class="price">{{yazi.ücret}}</p>
                 </div>
 
                 <h3><a href="course-details.html">{{yazi.baslik}}</a></h3>
@@ -234,12 +235,12 @@
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-                    <span>Oğuz Kaan Ekin</span>
+                    <span>{{request.user.username}}</span>
                   </div>
                   <div class="trainer-rank d-flex align-items-center">
-                    <i class="bx bx-user"></i>&nbsp;50
+                    <i class="bx bx-user"></i>
                     &nbsp;&nbsp;
-                    <i class="bx bx-heart"></i>&nbsp;65
+                    <i class="bx bx-heart"></i>
                   </div>
                 </div>
               </div>
@@ -248,7 +249,6 @@
           {% endfor %}
 
           
-
         </div>
 
       </div>
@@ -262,16 +262,17 @@
           <h2>Eğitmenler</h2>
           <p>Eğitmen Takımımız</p>
         </div>
-
+        
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
+        {% for egitmen in egitmenler  %}
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="{%static 'img/oguzkaanekin.jpg'%}" class="img-fluid" alt="">
+              <img src="{{egitmen.resim.url}}" class="img-fluid" alt="">
               <div class="member-content">
-                <h4>Oğuz Kaan Ekin</h4>
-                <span>Back-end Developer</span>
+                <h4>{{egitmen.isim}}</h4>
+                <span>{{egitmen.ünvan}}</span>
                 <p>
-                  18 Yaşında Akdeniz Üniversitesi Bilgisayar Programcılığı Öğrencisi
+                  {{egitmen.tanıma}}
                 </p>
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
@@ -282,44 +283,8 @@
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Sarah Jhinson</h4>
-                <span>Marketing</span>
-                <p>
-                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                </p>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>William Anderson</h4>
-                <span>Content</span>
-                <p>
-                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                </p>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
+          
 
         </div>
 

@@ -7,3 +7,4 @@ from .cash import Cash
 from .login import Login
 from .register import Register
 from .kurs import Kurs
+from .kategori import Kategori
