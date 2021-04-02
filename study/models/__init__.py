@@ -5,4 +5,5 @@ from .yorum import YorumModel
 from .egitmen import EgitmenModel
 from .dersler import DerslerModel
 from .about import AboutModel
+from .fiyatlandırma import FiyatlarModel
 
