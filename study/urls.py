@@ -1,11 +1,11 @@
 from django.urls import path
-from study.views import Anasayfa,about,Kurslar,trainers,articles,Register,Login,Kurs,Kategori
+from study.views import Anasayfa,about,KurslarView,trainers,articles,Register,Login,Kurs,Kategori,Hakkımızda
 from django.views.generic import TemplateView, RedirectView
 
 urlpatterns = [
     path("",Anasayfa,name="anasayfa"),
-    path("about",TemplateView.as_view(template_name="pages/about.html"),name="about"),
-    path("kurslar",TemplateView.as_view(template_name="pages/courses.html"),name="kurslar"),
+    path("about",Hakkımızda,name="about"),
+    path("kurslar",KurslarView,name="kurslar"),
     path("alistirma",TemplateView.as_view(template_name="pages/trainers.html"),name="alistirma"),
     path("makaleler",TemplateView.as_view(template_name="pages/articles.html"),name="makaleler"),
     path("ödeme",TemplateView.as_view(template_name="pages/cash.html"),name="ödeme"),

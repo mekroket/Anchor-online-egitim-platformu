@@ -1,9 +1,13 @@
 from django.shortcuts import render
-from study.models import KurslarGörüntüle
+from django.db import models
+from study.models import DerslerModel,EgitmenModel
 
-#! burda indexe değer dönmüyor düzeltilecek
-def Kurslar(request):
-        dersler = KurslarGörüntüle.objects.all()
-        return render(request,"pages/courses.html",context={
-            "dersler":dersler,
-        })
+
+def KurslarView(request):
+    ders = DerslerModel.objects.all()
+    egitmenler = EgitmenModel.objects.all()
+    return render(request,"pages/courses.html",context={
+        "ders":ders,
+        "egitmenler":egitmenler
+    })
+

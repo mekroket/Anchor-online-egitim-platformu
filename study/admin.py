@@ -1,5 +1,5 @@
 from django.contrib import admin
-from study.models import KategoriModel,YazilarModel,YorumModel,İletisimModel,EgitmenModel,KurslarGörüntüle
+from study.models import KategoriModel,YazilarModel,YorumModel,İletisimModel,EgitmenModel,DerslerModel,AboutModel
 from ckeditor.fields import RichTextField
 
 
@@ -35,8 +35,17 @@ class EgitmenAdmin(admin.ModelAdmin):
         "isim","resim","ünvan","tanıma"
     )
 
-@admin.register(KurslarGörüntüle)
-class KurslarAdmin(admin.ModelAdmin):
+@admin.register(DerslerModel)
+class DerslerAdmin(admin.ModelAdmin):
     list_display = (
-        "baslik","resim","icerik"
+        "baslik","resim","icerik","ücret","tür"
     )
+    search_fields = ("baslik",)
+
+
+@admin.register(AboutModel)
+class AboutModel(admin.ModelAdmin):
+    list_display = (
+        "isim","ünvan","resim","tanıma"
+    )
+    search_fields = ("isim",)

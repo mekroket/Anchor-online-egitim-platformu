@@ -1,6 +1,5 @@
 from .index import Anasayfa
 from .about import Hakkımızda
-from .courses import Kurslar
 from .trainers import trainers
 from .articles import Makaleler
 from .cash import Cash
@@ -8,3 +7,4 @@ from .login import Login
 from .register import Register
 from .kurs import Kurs
 from .kategori import Kategori
+from .courses import KurslarView

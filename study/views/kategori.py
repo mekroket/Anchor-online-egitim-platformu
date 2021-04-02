@@ -1,6 +1,6 @@
 from django.shortcuts import render,get_object_or_404
 from django.db import models
-from study.models import YazilarModel,EgitmenModel,KategoriModel
+from study.models import YazilarModel,EgitmenModel,KategoriModel,DerslerModel,AboutModel
 from django.core.paginator import Paginator
 
 def Kategori(request, KategoriSlug):
@@ -8,5 +8,7 @@ def Kategori(request, KategoriSlug):
         yazilar = YazilarModel.objects.all()
         return render(request,"pages/index.html",context={
             "yazilar": yazilar,
-            "egitmenler":egitmenler
+            "egitmenler":egitmenler,
+            "ders":ders,
+            "ceo":ceo            
         })

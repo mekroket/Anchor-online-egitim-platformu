@@ -8,5 +8,5 @@ def Anasayfa(request):
         egitmenler = EgitmenModel.objects.all()
         return render(request,"pages/index.html",context={
             "yazilar": yazilar,
-            "egitmenler":egitmenler
+            "egitmenler":egitmenler,
         })

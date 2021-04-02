@@ -1,9 +1,10 @@
 from django.shortcuts import render
-from study.models import EgitmenModel
+from study.models import AboutModel
 from django.db import models
 from django.core.paginator import Paginator
+
 def Hakkımızda(request):
-        egitmenler = EgitmenModel.objects.all()
+        ceo = AboutModel.objects.all()
         return render(request,"pages/about.html",context={
-            "egitmenler":egitmenler
+            "ceo": ceo
         })
