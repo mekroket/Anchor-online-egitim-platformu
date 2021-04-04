@@ -1,5 +1,5 @@
 from django.urls import path
-from study.views import Anasayfa,about,KurslarView,trainers,articles,Register,Login,Kurs,Kategori,Hakkımızda,Cash
+from study.views import Anasayfa,about,KurslarView,trainers,articles,Register,Login,Kurs,Kategori,Hakkımızda,Cash,Detail
 from django.views.generic import TemplateView, RedirectView
 
 urlpatterns = [
@@ -14,4 +14,6 @@ urlpatterns = [
     path("giris-yap",TemplateView.as_view(template_name="pages/login.html"),name="giris-yap"),
     path("kurs",TemplateView.as_view(template_name="pages/kurs.html"),name="kurs"),
     path("kategori/<slug:kategoriSlug>",Kategori,name="kategori"),
+    path("kurs-detay/<slug:slug>",Detail,name="kurs-detay"),
+    
 ] 
