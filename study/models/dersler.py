@@ -7,6 +7,7 @@ class DerslerModel(models.Model):
     icerik = models.TextField(max_length=150)
     ücret = models.CharField(max_length=20)
     tür = models.CharField(max_length=30)
+    #!yazar_fotografi = models.ImageField(upload_to="egitmen_resimleri")
     
     kısa_özet1 = models.CharField(max_length=50)
     kısa_özet2 = models.CharField(max_length=50)
@@ -15,7 +16,7 @@ class DerslerModel(models.Model):
     kısa_özet5 = models.CharField(max_length=50)
 
     kısa_özet1_tanıtım = models.TextField()
-    kısa_özet1_tanıtım_baslik = models.TextField()
+    kısa_özet1_tanıtım_baslik = models.TextField() #!max_length=50
 
     kısa_özet2_tanıtım = models.TextField()
     kısa_özet2_tanıtım_baslik = models.TextField()
@@ -29,7 +30,7 @@ class DerslerModel(models.Model):
     kısa_özet5_tanıtım = models.TextField()
     kısa_özet5_tanıtım_baslik = models.TextField()
 
-    """ #! sınırlamaları yap
+    """ #! sınırlamaları yap ve yazar fotoğrafı ekle
     egitmen_isim = models.CharField()
     bitirme_tarihi = models.CharField()
     süre = models.CharField()
