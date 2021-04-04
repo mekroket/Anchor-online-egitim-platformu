@@ -1,5 +1,5 @@
 from django.db import models
-
+from autoslug import AutoSlugField
 
 class DerslerModel(models.Model):
     baslik = models.CharField(max_length=20)
@@ -29,6 +29,8 @@ class DerslerModel(models.Model):
     kısa_özet5_tanıtım = models.TextField()
     kısa_özet5_tanıtım_baslik = models.TextField()
 
+    slug = AutoSlugField(populate_from = "baslik",unique=True)
+
     class Meta:
         db_table = "DerslerTablo"
         verbose_name = "Dersler"
@@ -36,4 +38,3 @@ class DerslerModel(models.Model):
 
     def __str__(self):
         return self.baslik
-    

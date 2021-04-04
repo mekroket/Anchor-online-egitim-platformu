@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.db import models
-from study.models import DerslerModel,EgitmenModel
+from study.models import EgitmenModel,DerslerModel
 
 
 def KurslarView(request):

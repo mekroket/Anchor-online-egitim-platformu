@@ -27,12 +27,12 @@
                   <h4>{{dersler.tür}}</h4>
                   <p class="price">{{dersler.ücret}}</p>
                 </div>
-                <h3><a href="course-details.html"></a></h3>
+                <h3><a href="{%url 'kurs-detay' dersler.id%}">{{dersler.baslik}}</a></h3>
                 <p>{{dersler.icerik}}</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-                    <span>{{dersler.baslik}}</span>
+                    <span>yazar</span>
                     
                   </div>
                   <div class="trainer-rank d-flex align-items-center">

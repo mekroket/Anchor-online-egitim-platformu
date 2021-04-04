@@ -230,7 +230,7 @@
                   <p class="price">{{yazi.ücret}}</p>
                 </div>
 
-                <h3><a href="course-details.html">{{yazi.baslik}}</a></h3>
+                <h3><a href="{%url 'kurs-detay' id=yazi.id%}">{{yazi.baslik}}</a></h3>
                 <p>{{yazi.icerik | safe}}</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from study.models import KategoriModel,YazilarModel,YorumModel,İletisimModel,EgitmenModel,DerslerModel,AboutModel,FiyatlarModel
+from study.models import KategoriModel,YazilarModel,YorumModel,İletisimModel,EgitmenModel,AboutModel,FiyatlarModel,DerslerModel
 from ckeditor.fields import RichTextField
 
 

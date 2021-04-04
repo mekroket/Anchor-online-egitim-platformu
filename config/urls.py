@@ -17,9 +17,16 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls.static import static
 from django.conf import settings
-
+from study.views import Anasayfa,Hakkımızda,Cash,Contact,Makaleler
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",include("study.urls")),  #! İNDEXİ DÖNMEK İÇİN İNCLUDE YAPIP BOŞ BIRAKIYORUZ
+     path("",Anasayfa,name="anasayfa"),
+     path("about",Hakkımızda,name="about"),
+     path("ödeme",Cash,name="ödeme"),
+     path("iletisim",Contact,name="iletisim"),
+     path("makaleler",Makaleler,name="makaleler"),
+
+
+    path("egitim/",include("study.urls")),  #! İNDEXİ DÖNMEK İÇİN İNCLUDE YAPIP BOŞ BIRAKIYORUZ
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

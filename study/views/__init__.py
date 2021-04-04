@@ -9,3 +9,5 @@ from .kurs import Kurs
 from .kategori import Kategori
 from .courses import KurslarView
 from .detail import Detail
+from .course import KursSayfası
+from .contact import Contact
