@@ -29,6 +29,11 @@ class DerslerModel(models.Model):
     kısa_özet5_tanıtım = models.TextField()
     kısa_özet5_tanıtım_baslik = models.TextField()
 
+    """ #! sınırlamaları yap
+    egitmen_isim = models.CharField()
+    bitirme_tarihi = models.CharField()
+    süre = models.CharField()
+    """
     slug = AutoSlugField(populate_from = "baslik",unique=True)
 
     class Meta:
