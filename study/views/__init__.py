@@ -8,3 +8,4 @@ from .register import Register
 from .kurs import Kurs
 from .kategori import Kategori
 from .courses import KurslarView
+from .detail import Detail

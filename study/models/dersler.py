@@ -7,7 +7,27 @@ class DerslerModel(models.Model):
     icerik = models.TextField(max_length=150)
     ücret = models.CharField(max_length=20)
     tür = models.CharField(max_length=30)
-    #! yazar = models.ForeignKey("account.CustomUserModel",related_name="yazilar",on_delete=models.CASCADE)
+    
+    kısa_özet1 = models.CharField(max_length=50)
+    kısa_özet2 = models.CharField(max_length=50)
+    kısa_özet3 = models.CharField(max_length=50)
+    kısa_özet4 = models.CharField(max_length=50)
+    kısa_özet5 = models.CharField(max_length=50)
+
+    kısa_özet1_tanıtım = models.TextField()
+    kısa_özet1_tanıtım_baslik = models.TextField()
+
+    kısa_özet2_tanıtım = models.TextField()
+    kısa_özet2_tanıtım_baslik = models.TextField()
+
+    kısa_özet3_tanıtım = models.TextField()
+    kısa_özet3_tanıtım_baslik = models.TextField()
+
+    kısa_özet4_tanıtım = models.TextField()
+    kısa_özet4_tanıtım_baslik = models.TextField()
+
+    kısa_özet5_tanıtım = models.TextField()
+    kısa_özet5_tanıtım_baslik = models.TextField()
 
     class Meta:
         db_table = "DerslerTablo"

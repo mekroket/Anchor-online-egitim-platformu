@@ -6,7 +6,7 @@
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Pricing</h2>
+        <h2>Premium</h2>
         <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
       </div>
     </div><!-- End Breadcrumbs -->
@@ -14,74 +14,74 @@
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
-
+      {% for fiyatlandırma in ödeme  %}
         <div class="row">
 
           <div class="col-lg-3 col-md-6">
             <div class="box">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
+              <h3>{{fiyatlandırma.sürüm}}</h3>
+              <h4><sup>{{fiyatlandırma.para_türü}}</sup>0<span> /{{fiyatlandırma.ay_gün}}</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
+                <li>{{fiyatlandırma.deger1}}</li>
+                <li>{{fiyatlandırma.deger2}}</li>
+                <li>{{fiyatlandırma.deger3}}</li>
                 <li class="na">Pharetra massa</li>
                 <li class="na">Massa ultricies mi</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a href="#" class="btn-buy">Satın Al</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
             <div class="box featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
+              <h3>{{fiyatlandırma.sürüm}}</h3>
+              <h4><sup>{{fiyatlandırma.para_türü}}</sup>19<span> / {{fiyatlandırma.ay_gün}}</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
+                <li>{{fiyatlandırma.deger4}}</li>
+                <li>{{fiyatlandırma.deger5}}</li>
+                <li>{{fiyatlandırma.deger6}}</li>
+                <li>{{fiyatlandırma.deger7}}</li>
                 <li class="na">Massa ultricies mi</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a href="#" class="btn-buy">Satın Al</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
+              <h3>{{fiyatlandırma.sürüm}}</h3>
+              <h4><sup>{{fiyatlandırma.para_türü}}</sup>29<span> / {{fiyatlandırma.ay_gün}}</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
+                <li>{{fiyatlandırma.deger8}}</li>
+                <li>{{fiyatlandırma.deger9}}</li>
+                <li>{{fiyatlandırma.deger10}}</li>
+                <li>{{fiyatlandırma.deger11}}</li>
+                <li>{{fiyatlandırma.deger12}}</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a href="#" class="btn-buy">Satın Al</a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
             <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
+              <span class="advanced">{{fiyatlandırma.indirim}}</span>
+              <h3>{{fiyatlandırma.sürüm}}</h3>
+              <h4><sup>{{fiyatlandırma.para_türü}}</sup>49<span> / {{fiyatlandırma.ay_gün}}</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
+                <li>{{fiyatlandırma.deger13}}</li>
+                <li>{{fiyatlandırma.deger14}}</li>
+                <li>{{fiyatlandırma.deger15}}</li>
+                <li>{{fiyatlandırma.deger16}}</li>
+                <li>{{fiyatlandırma.deger17}}</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+                <a href="#" class="btn-buy">Satın Al</a>
               </div>
             </div>
           </div>
@@ -90,6 +90,7 @@
 
       </div>
     </section><!-- End Pricing Section -->
+  {% endfor %}
 
   </main><!-- End #main -->
 {% endblock body %}
