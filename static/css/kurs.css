@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: Roboto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.import-video {
+    width: 100%;
+    height: 600px;
+}
+
+#navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #5fcf80;
+    z-index: 9999;
+}
+
+.nav-element {
+    list-style-type: none;
+}
+
+.nav-item a {
+    float: left;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.arrow-left {
+    margin-left: 50%;
+}
+
+.first-el {
+    margin-left: 50px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.hood-underline {
+    width: 50%;
+    height: 3px;
+    background-color: #5fcf80;
+    margin: 20px auto;
+}
+
+
+/* Kurs İçerik Başlangıç */
+
+.first-container {
+    width: 100%;
+}
+
+.first-container>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.dropdown a {
+    text-decoration: none;
+}
+
+.dropdown [data-toggle="dropdown"] {
+    position: relative;
+    display: block;
+    color: white;
+    background: #2980B9;
+    -moz-box-shadow: 0 1px 0 #409ad5 inset, 0 -1px 0 #20638f inset;
+    -webkit-box-shadow: 0 1px 0 #409ad5 inset, 0 -1px 0 #20638f inset;
+    box-shadow: 0 1px 0 #409ad5 inset, 0 -1px 0 #20638f inset;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.dropdown [data-toggle="dropdown"]:hover {
+    background: #2c89c6;
+}
+
+.dropdown .icon-arrow {
+    position: absolute;
+    display: block;
+    font-size: 0.7em;
+    color: #fff;
+    top: 14px;
+    right: 10px;
+}
+
+.dropdown .icon-arrow.open {
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+}
+
+.dropdown .icon-arrow.close {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+}
+
+.dropdown .icon-arrow:before {
+    content: '\25BC';
+}
+
+.dropdown .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown .dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown .dropdown-menu li a {
+    display: block;
+    color: #6f6f6f;
+    background: #EEE;
+    -moz-box-shadow: 0 1px 0 white inset, 0 -1px 0 #d5d5d5 inset;
+    -webkit-box-shadow: 0 1px 0 white inset, 0 -1px 0 #d5d5d5 inset;
+    box-shadow: 0 1px 0 white inset, 0 -1px 0 #d5d5d5 inset;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
+    padding: 10px 10px;
+}
+
+.dropdown .dropdown-menu li a:hover {
+    background: #f6f6f6;
+}
+
+.dropdown .show,
+.dropdown .hide {
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.dropdown .show {
+    display: block;
+    max-height: 9999px;
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    animation: showAnimation 0.5s ease-in-out;
+    -moz-animation: showAnimation 0.5s ease-in-out;
+    -webkit-animation: showAnimation 0.5s ease-in-out;
+    -moz-transition: max-height 1s ease-in-out;
+    -o-transition: max-height 1s ease-in-out;
+    -webkit-transition: max-height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
+}
+
+.dropdown .hide {
+    max-height: 0;
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    animation: hideAnimation 0.4s ease-out;
+    -moz-animation: hideAnimation 0.4s ease-out;
+    -webkit-animation: hideAnimation 0.4s ease-out;
+    -moz-transition: max-height 0.6s ease-out;
+    -o-transition: max-height 0.6s ease-out;
+    -webkit-transition: max-height 0.6s ease-out;
+    transition: max-height 0.6s ease-out;
+}
+
+@keyframes showAnimation {
+    0% {
+        -moz-transform: scaleY(0.1);
+        -ms-transform: scaleY(0.1);
+        -webkit-transform: scaleY(0.1);
+        transform: scaleY(0.1);
+    }
+    40% {
+        -moz-transform: scaleY(1.04);
+        -ms-transform: scaleY(1.04);
+        -webkit-transform: scaleY(1.04);
+        transform: scaleY(1.04);
+    }
+    60% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.04);
+        -ms-transform: scaleY(1.04);
+        -webkit-transform: scaleY(1.04);
+        transform: scaleY(1.04);
+    }
+    100% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.02);
+        -ms-transform: scaleY(1.02);
+        -webkit-transform: scaleY(1.02);
+        transform: scaleY(1.02);
+    }
+    100% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}
+
+@-moz-keyframes showAnimation {
+    0% {
+        -moz-transform: scaleY(0.1);
+        -ms-transform: scaleY(0.1);
+        -webkit-transform: scaleY(0.1);
+        transform: scaleY(0.1);
+    }
+    40% {
+        -moz-transform: scaleY(1.04);
+        -ms-transform: scaleY(1.04);
+        -webkit-transform: scaleY(1.04);
+        transform: scaleY(1.04);
+    }
+    60% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.04);
+        -ms-transform: scaleY(1.04);
+        -webkit-transform: scaleY(1.04);
+        transform: scaleY(1.04);
+    }
+    100% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.02);
+        -ms-transform: scaleY(1.02);
+        -webkit-transform: scaleY(1.02);
+        transform: scaleY(1.02);
+    }
+    100% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}
+
+@-webkit-keyframes showAnimation {
+    0% {
+        -moz-transform: scaleY(0.1);
+        -ms-transform: scaleY(0.1);
+        -webkit-transform: scaleY(0.1);
+        transform: scaleY(0.1);
+    }
+    40% {
+        -moz-transform: scaleY(1.04);
+        -ms-transform: scaleY(1.04);
+        -webkit-transform: scaleY(1.04);
+        transform: scaleY(1.04);
+    }
+    60% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.04);
+        -ms-transform: scaleY(1.04);
+        -webkit-transform: scaleY(1.04);
+        transform: scaleY(1.04);
+    }
+    100% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.02);
+        -ms-transform: scaleY(1.02);
+        -webkit-transform: scaleY(1.02);
+        transform: scaleY(1.02);
+    }
+    100% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}
+
+@keyframes hideAnimation {
+    0% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    60% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.02);
+        -ms-transform: scaleY(1.02);
+        -webkit-transform: scaleY(1.02);
+        transform: scaleY(1.02);
+    }
+    100% {
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+}
+
+@-moz-keyframes hideAnimation {
+    0% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    60% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.02);
+        -ms-transform: scaleY(1.02);
+        -webkit-transform: scaleY(1.02);
+        transform: scaleY(1.02);
+    }
+    100% {
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+}
+
+@-webkit-keyframes hideAnimation {
+    0% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    60% {
+        -moz-transform: scaleY(0.98);
+        -ms-transform: scaleY(0.98);
+        -webkit-transform: scaleY(0.98);
+        transform: scaleY(0.98);
+    }
+    80% {
+        -moz-transform: scaleY(1.02);
+        -ms-transform: scaleY(1.02);
+        -webkit-transform: scaleY(1.02);
+        transform: scaleY(1.02);
+    }
+    100% {
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+}
+
+
+/* Kurs İçerik Bitiş */
+
+
+/* Genel Bakış Başlangıç */
+
+.second-container {
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.hood-about {
+    font-size: 25px;
+}
+
+
+/* Genel Bakış Bitiş */
+
+
+/* Soru & Cevap Başlangıç */
+
+.thirth-container {
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.quest-hood {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.quest-hr {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.comment-img {
+    width: 60px;
+    height: 60px;
+}
+
+.comment-name {
+    font-size: 20px;
+}
+
+.comment-write {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+    resize: vertical;
+}
+
+.which-course {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.comment-button {
+    font-size: 20px;
+    background-color: #5fcf80;
+    font-weight: bold;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: 15% auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grid1 {
+    text-align: center;
+}
+
+.comment-sent {
+    padding: 5px 20px;
+}
+
+.comment-time {
+    font-size: 13px;
+}
+
+#hide-show {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: #5fcf80;
+    border: 3px solid #5fcf80;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ghost {
+    display: none;
+}
+
+.quest-ask {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#change-txt {
+    display: inline;
+}
+
+
+/* Soru & Cevap Bitiş */

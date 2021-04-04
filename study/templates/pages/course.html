@@ -1,0 +1,321 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block body %}
+
+<div class="main">
+        <div class="video">
+            <iframe class="import-video" src="https://www.youtube.com/embed/NMFq7zjEoH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="search_iframe"></iframe>
+        </div>
+
+        <div class="course-detail">
+            <nav id="navbar">
+                <ul class="nav-element">
+                    <li class="nav-item">
+                        <a href="#one" class="element first-el">Kurs İçeriği</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#two" class="element second-el">Genel Bakış</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#three" class="element thirth-el">Soru & Cevap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#four" class="element fourth-el">Duyurular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="element arrow arrow-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-left-square" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="element arrow arrow-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-right-square" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5.795 12.456A.5.5 0 0 1 5.5 12V4a.5.5 0 0 1 .832-.374l4.5 4a.5.5 0 0 1 0 .748l-4.5 4a.5.5 0 0 1-.537.082z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="stickyalias"></div>
+
+            <br>
+
+            <div class="element-detail">
+                <h4 id="one">Kurs İçeriği</h4>
+                <hr class="hood-underline">
+
+                <!-- Kurs içerik başlangıç -->
+
+                <div class="first-container">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">First Menu <i class="icon-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.youtube.com/embed/NMFq7zjEoH8" target="search_iframe">1</a></li>
+                                <li><a href="https://www.youtube.com/embed/vLNGxab7dOk" target="search_iframe">2</a></li>
+                                <li><a href="https://www.youtube.com/embed/XUVt-bi8yTo" target="search_iframe">3</a></li>
+                                <li><a href="https://www.youtube.com/embed/NMFq7zjEoH8" target="search_iframe">4</a></li>
+                                <li><a href="https://www.youtube.com/embed/vLNGxab7dOk" target="search_iframe">5</a></li>
+                                <li><a href="https://www.youtube.com/embed/XUVt-bi8yTo" target="search_iframe">6</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">Second Menu <i class="icon-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">Third Menu <i class="icon-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">Fifth Menu <i class="icon-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kurs içerik bitiş -->
+
+
+
+
+                <!-- Genel Bakış Başlangıç -->
+
+                <h4 id="two">Genel Bakış</h4>
+                <hr class="hood-underline">
+
+                <div class="second-container">
+                    <h5 class="hood-about">Kurs Hakkında</h5>
+                    <div class="about">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, eveniet!</p>
+                        <hr class="quest-hr">
+
+                    </div>
+                </div>
+
+                <!-- Genel Bakış Bitiş -->
+
+
+                <!-- Soru & Cevap Başlangıç -->
+
+                <h4 id="three">Soru & Cevap</h4>
+                <hr class="hood-underline">
+
+                <div class="thirth-container">
+                    <h5 class="quest-hood">Kurstaki Sorular (500)</h5>
+                    <div class="comments">
+
+                        <!-- Tekrarlanacak  -->
+                        <hr class="quest-hr">
+                        <div class="comment">
+                            <div class="grid grid1">
+                                <img src="Logo.png" class="comment-img">
+                                <h6 class="comment-name">Yazılımcı Rehberi</h6>
+                                <p class="comment-time">Gün saat felan</p>
+                            </div>
+                            <div class="grid grid2">
+                                <p class="comment-sent">
+                                    YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="quest-hr">
+                        <div class="comment">
+                            <div class="grid grid1">
+                                <img src="Logo.png" class="comment-img">
+                                <h6 class="comment-name">Yazılımcı Rehberi</h6>
+                                <p class="comment-time">Gün saat felan</p>
+                            </div>
+                            <div class="grid grid2">
+                                <p class="comment-sent">
+                                    YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="quest-hr">
+
+                        <!-- Gizlenecek Kısım -->
+                        <div id="ghost">
+                            <div class="comment">
+                                <div class="grid grid1">
+                                    <img src="Logo.png" class="comment-img">
+                                    <h6 class="comment-name">Yazılımcı Rehberi</h6>
+                                    <p class="comment-time">Gün saat felan</p>
+                                </div>
+                                <div class="grid grid2">
+                                    <p class="comment-sent">
+                                        YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="quest-hr">
+                            <div class="comment">
+                                <div class="grid grid1">
+                                    <img src="Logo.png" class="comment-img">
+                                    <h6 class="comment-name">Yazılımcı Rehberi</h6>
+                                    <p class="comment-time">Gün saat felan</p>
+                                </div>
+                                <div class="grid grid2">
+                                    <p class="comment-sent">
+                                        YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM YORUM
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="quest-hr">
+                        </div>
+
+                    </div>
+                    <button id="hide-show">Daha <p id="change-txt">Fazla</p> Göster</button>
+
+                    <div class="send-comment">
+                        <h6 class="quest-ask">Soru Sor</h6>
+                        <select class="which-course">
+                            <optgroup label="1.Bölüm" class="story-course">
+                                <option class="course-select">1.ders</option>
+                                <option class="course-select">2.ders</option>
+                                <option class="course-select">3.ders</option>
+                                <option class="course-select">4.ders</option>
+                            </optgroup>
+                            <optgroup label="2.Bölüm" class="story-course">
+                                <option class="course-select">1.ders</option>
+                                <option class="course-select">2.ders</option>
+                                <option class="course-select">3.ders</option>
+                                <option class="course-select">4.ders</option>
+                            </optgroup>
+                        </select>
+                        <br>
+
+                        <textarea class="comment-write" placeholder="Sorunuzu Yazınız..."></textarea>
+                        <br>
+
+                        <button type="submit" class="comment-button">Gönder</button>
+                    </div>
+                </div>
+
+                <!-- Soru & Cevap Başlangıç -->
+
+                <h4 id="four">Duyurular</h4>
+                <hr class="hood-underline">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, alias pariatur odit aspernatur sunt rem ut dolor eius accusantium possimus iure quasi. Quas nemo quae expedita commodi est aspernatur qui, quis quia temporibus eligendi, saepe
+                    adipisci aut, quos iusto atque culpa hic dicta? Minus animi earum sit id nulla? Quo mollitia quidem est sapiente architecto libero nostrum dicta doloribus provident eius ex recusandae deserunt accusantium, pariatur blanditiis in dolore
+                    explicabo harum quae rerum. Doloribus perspiciatis distinctio, expedita illum illo quibusdam reiciendis eaque tempore exercitationem fugiat, facere vitae alias. Qui architecto ipsa accusamus similique vel tempora pariatur id deleniti
+                    neque voluptate modi delectus excepturi in ullam, sed voluptas ex accusantium, sapiente blanditiis! Doloremque, sunt facere. Laborum corrupti fugit incidunt temporibus rem magni hic, quo, possimus, eveniet voluptatibus inventore ullam
+                    id fuga aliquam vitae alias tempore molestias maiores ratione quos voluptas dolorum quibusdam! Molestias quo quis voluptate praesentium incidunt. Tempora quam eligendi repellat, accusamus incidunt tenetur id impedit facilis quis inventore
+                    ab minus sit, a sapiente modi nemo, similique rem commodi? Consequuntur iure accusantium fugiat harum adipisci vitae illum dicta animi commodi amet? Sed veritatis vero doloribus perferendis facilis consequatur porro quas deleniti laborum
+                    facere necessitatibus reiciendis ut voluptatibus nobis ex assumenda autem, cum modi veniam blanditiis consequuntur, rerum nemo. Nisi praesentium ea quis veniam alias expedita facere amet ducimus harum quae saepe in veritatis sint optio
+                    dolores modi, fugit suscipit doloremque! Nemo architecto saepe voluptate, debitis quaerat voluptatibus amet est autem ad at aperiam obcaecati exercitationem, repellat sequi. Ea omnis totam voluptatibus accusantium quod adipisci exercitationem
+                    dolorem mollitia, quasi itaque debitis fugit minus, dignissimos repudiandae doloremque sapiente libero perferendis reiciendis nihil quam autem aliquam molestias. Quae, incidunt? Iste enim quisquam sint eveniet, sit unde voluptates
+                    iusto cupiditate omnis vero tempora id asperiores veritatis deserunt, suscipit maiores velit autem facere quos praesentium? Quod iusto omnis non assumenda culpa aspernatur consequuntur, aliquid dicta accusantium doloremque animi maxime
+                    nesciunt et. Consectetur facilis et distinctio consequatur quo, repellendus, veritatis nulla totam ratione cupiditate doloribus vitae est itaque? Tempora, rerum! Autem, quia dolore. Voluptate pariatur fugiat provident adipisci expedita
+                    iure nesciunt suscipit magni deleniti ex porro fugit, alias reiciendis soluta laboriosam natus nulla veniam inventore odit illum laborum, quasi aliquid molestias. Voluptatibus exercitationem dicta itaque, corrupti provident dolorem
+                    ipsam quos soluta cumque at fuga expedita a? Cumque exercitationem consequuntur necessitatibus ipsa laboriosam molestiae libero qui delectus asperiores ducimus esse ullam, unde laudantium dolorem blanditiis, iste at enim corporis praesentium
+                    amet. Numquam, totam. In eveniet quibusdam ipsam vel. Sed, quaerat ducimus beatae similique ipsam voluptate possimus quae error quos laboriosam ab velit sint. Aliquam sint cumque aperiam error, accusamus, animi dolore ducimus placeat
+                    facilis officiis itaque eius magni voluptas numquam molestias commodi. Neque nostrum temporibus perspiciatis reprehenderit eum quia et in dignissimos? Modi, natus? Obcaecati, expedita ratione similique non et perspiciatis, aliquid
+                    voluptatibus, ut assumenda quae quisquam animi delectus accusamus facilis illum nam nulla. Tempora illo dolore expedita ipsam consectetur nobis officiis voluptatibus ex? Mollitia adipisci quia est aliquam cupiditate modi enim! Adipisci
+                    iure sed animi omnis inventore ipsum consequuntur. Error provident maxime, quis ipsam quasi iste laudantium. Repudiandae provident architecto temporibus molestias suscipit quidem doloribus tempora a possimus, distinctio dolor. Fugiat
+                    iste voluptatibus quibusdam ab facilis soluta dolore illo. Eveniet nam nobis enim quibusdam alias atque, delectus modi distinctio illum facere tempora quae. Quae velit facilis nisi dolores odit quasi. Aliquam, eveniet ut doloremque
+                    doloribus, debitis saepe ducimus illo ullam quas quibusdam voluptatum accusamus facere rem nam. Deserunt facere quae, excepturi dicta natus consequatur aperiam alias, quia aliquam beatae quis modi pariatur iure totam nulla laudantium
+                    nobis iusto explicabo. Nihil quo ratione quia officiis sint quisquam iusto perspiciatis, obcaecati unde totam, libero expedita itaque quis qui numquam voluptatem? Cum unde dolorum veritatis. Placeat assumenda nesciunt nemo, quibusdam
+                    consectetur perferendis saepe ad delectus eum soluta velit impedit. Culpa, minus numquam. Deserunt, minus quae? Impedit nihil animi perspiciatis, suscipit reiciendis architecto et ad officiis autem corrupti similique nam laboriosam
+                    necessitatibus! Pariatur, dolor impedit voluptates quibusdam maxime delectus, voluptatum quasi hic, soluta voluptas ex sed maiores recusandae vel eaque eum. Obcaecati nesciunt ipsam, ut vitae laudantium iste officiis suscipit laboriosam
+                    porro doloribus dignissimos, sint molestiae ipsum temporibus voluptates enim repellendus quasi reiciendis rem. Obcaecati quisquam suscipit repellat voluptas animi doloribus, quas aut porro, placeat veritatis dolor tempora vel laborum
+                    magni sed fugit eveniet! Labore, obcaecati reprehenderit. Dolor eum molestias obcaecati ex corrupti possimus ad maiores omnis sint? Distinctio praesentium illo quo soluta amet voluptatibus? Maxime dolor eos repudiandae magni sequi
+                    doloribus cum hic saepe. Natus quam sunt repudiandae itaque neque placeat delectus commodi, autem tenetur ipsa in veritatis ratione enim distinctio modi minima expedita velit eius recusandae consequatur officiis aut ipsam! Nostrum
+                    esse in veniam, eum et repellendus ipsam eveniet voluptatibus? Vel consectetur eveniet qui impedit ab iure eius, doloribus nesciunt minus vitae, quibusdam magni repellat, nostrum quis temporibus perspiciatis id? Explicabo autem hic
+                    repellendus quisquam totam. Iusto laborum exercitationem repellendus aliquid perspiciatis tempore accusantium quibusdam debitis reprehenderit provident maxime facere omnis fugit, voluptatum unde aspernatur, aut nostrum enim earum sunt
+                    quos doloremque inventore eum. Error eius molestiae illum voluptatibus, ex molestias deleniti soluta nesciunt eum ducimus. Numquam doloremque, impedit temporibus libero earum rem necessitatibus magni odit voluptates illum autem similique
+                    architecto modi reprehenderit obcaecati dolores in beatae sint ab distinctio itaque explicabo quaerat molestiae recusandae! Provident, dolorum, atque quod saepe neque non odit, laboriosam sunt facilis voluptatibus nulla sapiente aliquid
+                    obcaecati praesentium soluta dolore commodi. Laborum veritatis quae sit qui sapiente, quod explicabo nesciunt, deserunt optio iure velit in repudiandae voluptatem iusto quibusdam, asperiores perferendis esse voluptate. Nobis beatae
+                    provident cum ab officia doloremque odio voluptatum asperiores illum culpa blanditiis temporibus assumenda tempore eos, quidem voluptate quia odit repellendus numquam alias maiores dolore repellat. Quo saepe nemo soluta voluptatibus,
+                    tempora est neque quidem consequatur sit qui dicta eveniet laborum repellat assumenda molestias, nostrum ullam minus itaque? Non, iure. Facere, dolorem quod quam exercitationem, id commodi aperiam voluptates fuga nesciunt placeat facilis
+                    odio ducimus cumque pariatur minima magni quia perspiciatis, labore voluptate praesentium tempora doloremque? Minus hic debitis quidem?</p>
+            </div>
+        </div>
+
+        <script>
+            // Dropdown Menu
+            var dropdown = document.querySelectorAll('.dropdown');
+            var dropdownArray = Array.prototype.slice.call(dropdown, 0);
+            dropdownArray.forEach(function(el) {
+                var button = el.querySelector('a[data-toggle="dropdown"]'),
+                    menu = el.querySelector('.dropdown-menu'),
+                    arrow = button.querySelector('i.icon-arrow');
+
+                button.onclick = function(event) {
+                    if (!menu.hasClass('show')) {
+                        menu.classList.add('show');
+                        menu.classList.remove('hide');
+                        arrow.classList.add('open');
+                        arrow.classList.remove('close');
+                        event.preventDefault();
+                    } else {
+                        menu.classList.remove('show');
+                        menu.classList.add('hide');
+                        arrow.classList.remove('open');
+                        arrow.classList.add('close');
+                        event.preventDefault();
+                    }
+                };
+            })
+
+            Element.prototype.hasClass = function(className) {
+                return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+            };
+        </script>
+
+        <!-- Daha Fazla Göster Buton -->
+        <script>
+            $("#hide-show").click(function() {
+                $("#ghost").slideToggle(1000);
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#hide-show").click(function() {
+                    $("#change-txt").text("Az");
+                })
+            });
+        </script>
+
+        <!-- Navbar sabitleme -->
+        <script>
+            // Check the initial Poistion of the Sticky Header
+            var stickyHeaderTop = $('#navbar').offset().top;
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > stickyHeaderTop) {
+                    $('#navbar').css({
+                        position: 'fixed',
+                        top: '0px'
+                    });
+                    $('#stickyalias').css('display', 'block');
+                } else {
+                    $('#navbar').css({
+                        position: 'static',
+                        top: '0px'
+                    });
+                    $('#stickyalias').css('display', 'none');
+                }
+            });
+        </script>
+
+{% endblock body %}
