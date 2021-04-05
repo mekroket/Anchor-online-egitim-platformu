@@ -3,7 +3,7 @@
 
 {% block body %}
 {% include "includes/message.html" %}
-
+{% load crispy_forms_tags %}
 <main>
     <div class="container-fluid">
       <div class="row">
@@ -16,7 +16,7 @@
             <form method="POST">
             {% csrf_token %}
             <div class="form-group">
-                {{form}}
+                {{form | crispy}}
               </div>
               <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Kayıt Ol">
             </form>
