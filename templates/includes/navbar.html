@@ -18,23 +18,20 @@
           
           <li><a href="{%url 'iletisim'%}">İletişim</a></li>
           {% if request.user.is_authenticated %}
-          <li class="drop-down"><a href="">Profil</a>
+          <li class="drop-down"><a href="#">Profil</a>
             <ul>
               <li><a href="#"></a></li>
               <li class="drop-down"><a href="#">Profil Yönetimi</a>
-                <ul>
-                  <li><a href="{%url 'sifre-degistir'%}">Şifreyi Güncelle</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
               </li>
+              <li><a href="{%url 'cikis'%}">Derslerim</a></li>
+              <li><a href="{%url 'alistirma'%}">Alıştırmalar</a></li>
+              <li><a href="{%url 'sifre-degistir'%}">Şifreyi Güncelle</a></li>
+              <li><a href="{%url 'cikis'%}">Çıkış</a></li>
             </ul>
           </li>
-          <li><a href="{%url 'cikis'%}">Derslerim</a></li>
-          <li><a href="{%url 'alistirma'%}">Alıştırmalar</a></li>
-          <li><a href="{%url 'cikis'%}">Çıkış</a></li>
+          
+          
+          
           {% else %}
           <a href="{%url 'kayit'%}" class="get-started-btn">Hemen Başla</a>
           {% endif %}

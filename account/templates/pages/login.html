@@ -16,16 +16,12 @@
             <form method="POST">
             {% csrf_token %}
             <div class="form-group">
-                
                 {{form}}
-              
-                
-                
               </div>
               <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Kayıt Ol">
             </form>
             <a href="#!" class="forgot-password-link">Şifremi Unuttum</a>
-            <p class="login-wrapper-footer-text">Üye misiniz ? <a href="{%url 'giris'%}" class="text-reset">Giriş Yapın</a></p>
+            <p class="login-wrapper-footer-text">Üye misiniz ? <a href="{%url 'kayit'%}" class="text-reset">Giriş Yapın</a></p>
           </div>
         </div>
         <div class="col-sm-6 px-0 d-none d-sm-block">
