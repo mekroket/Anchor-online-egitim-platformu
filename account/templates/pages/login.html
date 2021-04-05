@@ -12,16 +12,16 @@
             <img src=""  class="logo">
           </div>
           <div class="login-wrapper my-auto">
-            <h1 class="login-title">Kayıt Olun</h1>
+            <h1 class="login-title">Giriş Yapın</h1>
             <form method="POST">
             {% csrf_token %}
             <div class="form-group">
                 {{form | crispy}}
               </div>
-              <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Kayıt Ol">
+              <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Giriş Yap">
             </form>
             <a href="#!" class="forgot-password-link">Şifremi Unuttum</a>
-            <p class="login-wrapper-footer-text">Üye misiniz ? <a href="{%url 'kayit'%}" class="text-reset">Giriş Yapın</a></p>
+            <p class="login-wrapper-footer-text" style="color:blue;">Üye  değil misiniz ? <a href="{%url 'kayit'%}" class="text-reset" style="text-decoration:none;">Kayıt Olun</a></p>
           </div>
         </div>
         <div class="col-sm-6 px-0 d-none d-sm-block">
