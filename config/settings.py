@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "study",
     "account",
-    "ckeditor"
+    "ckeditor",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,5 @@ AUTH_USER_MODEL = 'account.CustomUserModel'
 # ! MEDİA
 MEDİA_URL = '/media/'
 MEDİA_ROOT = os.path.join(BASE_DIR,"media/")
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

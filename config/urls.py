@@ -28,5 +28,7 @@ urlpatterns = [
      path("makaleler",Makaleler,name="makaleler"),
 
 
+
     path("egitim/",include("study.urls")),  #! İNDEXİ DÖNMEK İÇİN İNCLUDE YAPIP BOŞ BIRAKIYORUZ
+    path("account/",include("account.urls")),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
