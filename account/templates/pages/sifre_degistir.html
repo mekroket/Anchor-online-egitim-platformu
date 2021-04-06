@@ -1,17 +1,35 @@
 
-{% extends "base.html" %}
-{% load crispy_forms_tags %}
+{% extends 'base.html' %}
+{% load static %}
+
 {% block body %}
-
-
-
-<br><br><br><br><br><br><br><br><br><br>
-
-<form method="POST">
-    {% csrf_token %} 
-    {{form | crispy}}
-    <input type="submit" class="btn btn-danger" value="Şifre Güncelle">
-</form>
+{% include "includes/message.html" %}
+{% load crispy_forms_tags %}
+<main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 login-section-wrapper">
+          <div class="brand-wrapper">
+            <img src=""  class="logo">
+          </div>
+          <div class="login-wrapper my-auto">
+            <h1 class="login-title">Şifrenizi Güncelleyin</h1>
+            <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                {{form | crispy}}
+              </div>
+              <input name="login" id="login" class="btn btn-block login-btn" type="submit" value="Şifreyi Güncelle">
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-6 px-0 d-none d-sm-block">
+          <img src="{%static 'img/password.jpg'%}" alt="login image" class="login-img">
+        </div>
+      </div>
+    </div>
+  </main>
+ 
 
 
 {% endblock body %}

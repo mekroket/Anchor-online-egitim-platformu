@@ -59,3 +59,4 @@ class FiyatAdmin(admin.ModelAdmin):
         "deger16","deger17",
     )
     search_fields = ("sürüm",)
+

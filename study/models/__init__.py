@@ -7,3 +7,4 @@ from .dersler import DerslerModel
 from .about import AboutModel
 from .fiyatlandırma import FiyatlarModel
 
+

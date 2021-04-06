@@ -16,7 +16,7 @@ class YazilarModel(DateAbstractModel):
     class Meta:
         db_table ="Yazi"
         verbose_name = "Yazi"
-        verbose_name_plural  = "Kurslar"
+        verbose_name_plural  = " Popüler Kurslar"
 
     def __str__(self):
         return self.baslik
