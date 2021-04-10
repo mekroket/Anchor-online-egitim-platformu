@@ -66,7 +66,9 @@ h4 {
 /* Kurs İçerik Başlangıç */
 
 .first-container {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .first-container>ul {
@@ -421,7 +423,7 @@ h4 {
 .second-container {
     margin: auto;
     width: 80%;
-    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .hood-about {
@@ -552,3 +554,42 @@ h4 {
 
 
 /* Soru & Cevap Bitiş */
+
+
+/* Eğitmen Başlangıç */
+
+.fourth-container {
+    width: 80%;
+    margin: auto;
+}
+
+.educator-about {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.educator-hood {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.educator-img-div {
+    text-align: center;
+}
+
+.educator-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.educator-name {
+    font-size: 25px;
+}
+
+.educator-about-txt {
+    padding-left: 50px;
+}
+
+
+/* Eğitmen Bitiş */
