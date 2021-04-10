@@ -11,4 +11,5 @@ from .courses import KurslarView
 from .detail import Detail
 from .course import KursSayfası
 from .contact import Contact
+from .profile import Profile
 
