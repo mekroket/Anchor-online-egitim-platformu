@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-{% extends "base.html" %} {% load static %} {% block body %}
+{% extends "base.html" %} 
+{% load static %} 
+{% block body %}
+
 <div class="page-wrapper chiller-theme toggled">
     <a id="show-sidebar" class="btn btn-lg btn-dark" href="#">
         <i class="fas fa-bars"></i>
@@ -44,48 +46,42 @@
     <!-- sidebar-wrapper  -->
     <main class="page-content">
         <div class="change-profile">
-            <div id="first">
-                <h4 class="hood">Profili Düzenle</h4>
-                <hr class="hood-under">
-                <form class="change-profile-form">
-                    <input type="text" class="change-input change-name" placeholder="İsim..." value="Yazılımcı"><br>
-                    <input type="text" class="change-input change-lastname" placeholder="Soyisim..." value="Rehberi"><br>
-                    <input type="email" class="change-input change-email" placeholder="E-Posta..." value="yazılımcırehberi@gmail.com" disabled><br>
-                    <button class="update-button profile-update">Güncelle</button>
-                </form>
-            </div>
-            <!-- Resim Değiştir -->
-            <div id="second">
-                <h4 class="hood">Resim Değiştir</h4>
-                <hr class="hood-under">
-                <form class="change-img-form">
-                    <img src="Logo.png" class="preview-img">
-                    <input type="file" class="change-input change-img">
-                    <button class="update-button img-update">Güncelle</button>
-                </form>
-            </div>
-            <!-- Şifre Değiştir -->
-            <div id="thirth">
-                <h4 class="hood">Şifre Değiştir</h4>
-                <hr class="hood-under">
-                <form class="change-pass-form">
-                    <input type="text" class="change-input have-pass" placeholder="Şifreniz..."><br>
-                    <input type="text" class="change-input change-pass" placeholder="Yeni Şifreniz..."><br>
-                    <input type="text" class="change-input conf-pass" placeholder="Şifreyi Onaylayın..."><br>
-                    <button class="update-button pass-update">Güncelle</button>
-                </form>
-            </div>
-            <!-- Ödeme Yöntemi -->
-            <div id="fourth">
-                <h4 class="hood">Ödeme Yöntemi</h4>
-                <hr class="hood-under">
-                <form class="change-paid-form">
+            <form>
+                <div id="first">
+                    <h4 class="hood">Profili Düzenle</h4>
+                    <hr class="hood-under">
+                    
+                        <input type="text" class="change-input change-name" placeholder="İsim..." value="Yazılımcı"><br>
+                        <input type="text" class="change-input change-lastname" placeholder="Soyisim..." value="Rehberi"><br>
+                        <input type="email" class="change-input change-email" placeholder="E-Posta..." value="yazılımcırehberi@gmail.com"><br>
+                        {% comment %} <button class="update-button profile-update">Güncelle</button> {% endcomment %}
+                </div>
+                <!-- Resim Değiştir -->
+                <div id="second">
+                    <h4 class="hood">Resim Değiştir</h4>
+                    <hr class="hood-under">
+                        <img src="Logo.png" class="preview-img">
+                        <input type="file" class="change-input change-img">
+                        {% comment %} <button class="update-button img-update">Güncelle</button> {% endcomment %}
+                </div>
+                <!-- Şifre Değiştir -->
+                <div id="thirth">
+                    <h4 class="hood">Şifre Değiştir</h4>
+                    <hr class="hood-under">
+                        <input type="text" class="change-input have-pass" placeholder="Şifreniz..."><br>
+                        <input type="text" class="change-input change-pass" placeholder="Yeni Şifreniz..."><br>
+                        <input type="text" class="change-input conf-pass" placeholder="Şifreyi Onaylayın..."><br>
+                        {% comment %} <button class="update-button pass-update">Güncelle</button> {% endcomment %}
+                </div>
+                <!-- Ödeme Yöntemi -->
+                <div id="fourth">
+                    <h4 class="hood">Ödeme Yöntemi</h4>
+                    <hr class="hood-under">
+                        {% comment %} <button class="update-button paid-update">Güncelle</button> {% endcomment %}
+                </div>
 
-                    <button class="update-button paid-update">Güncelle</button>
-                </form>
-            </div>
-
-            <button class="update-button all-update">Hepsini Güncelle</button>
+                <button class="update-button all-update">Hepsini Güncelle</button>
+            </form>
         </div>
 
     </main>
@@ -101,15 +97,4 @@
         $(".page-wrapper").addClass("toggled");
     });
 </script>
-{% endblock body %}
-=======
-{% extends "base.html" %}
-
-{% load static %}
-
-{% block body %}
-{% include "includes/navbar.html" %}
-
-{% include "includes/footer.html" %}
-{% endblock body %}
->>>>>>> 81035294d761bbc02a574db36d4dd0e77a818d42
+{% endblock body %} 
