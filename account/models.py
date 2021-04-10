@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class CustomUserModel(AbstractUser):
-    avatar = models.ImageField(upload_to='avatar/', blank=True, null=True)
+    avatar = models.ImageField(upload_to='avatar/', blank=True, null=True,default="ders.jpg")
 
     class Meta:
         db_table = 'user'

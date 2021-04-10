@@ -1,5 +1,5 @@
 from django.urls import path
-from account.views import Cikis,Sifre_degistir,kayit,Profile
+from account.views import Cikis,Sifre_degistir,kayit,Profile,profil_guncelle
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -11,4 +11,5 @@ urlpatterns = [
         template_name="pages/login.html"
     ),name="giris"),
     path("profil-sayfasi",Profile,name="profil-sayfasi"),
+    path("profil-güncelle",profil_guncelle,name="profil-güncelle"),
 ]
