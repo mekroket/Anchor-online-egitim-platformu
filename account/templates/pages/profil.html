@@ -1,5 +1,103 @@
-{% extends "base.html" %}
-{% load static %}
-{% block body %}
+{% extends "base.html" %} {% load static %} {% block body %}
+<div class="page-wrapper chiller-theme toggled">
+    <a id="show-sidebar" class="btn btn-lg btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <div class="sidebar-brand">
+                <div id="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar-header">
+                <div class="user-pic">
+                    <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg" alt="User picture">
+                    <!-- <img class="img-responsive img-rounded" src="Logo.png" alt="User picture"> -->
+                </div><br>
+                <div class="user-info">
+                    <span class="user-name">Yazılımcı Rehberi</span>
+                </div>
+            </div>
 
+            <!-- sidebar-search  -->
+            <div class="sidebar-menu">
+                <ul>
+                    <li><a href="#first"><i class="fas fa-user-cog"></i><span>Profil</span></a></li>
+                    <li><a href="#second"><i class="fas fa-image"></i><span>Resim</span></a></li>
+                    <li><a href="#thirth"><i class="fas fa-unlock-alt"></i><span>Şifre</span></a></li>
+                    <li><a href="#fourth"><i class="fas fa-money-bill-wave"></i><span>Ödeme Yöntemleri</span></a></li>
+                    <li><a href="#"><i class="fas fa-user-tie"></i><span>Eğitmen Olun</span></a></li>
+                    <li><a href="#"><i class="fas fa-times-circle"></i><span>Hesabı Kapat</span></a></li>
+                </ul>
+            </div>
+            <!-- sidebar-menu  -->
+        </div>
+        <div class="sidebar-footer">
+            <a href="#" class="turn-menu">
+                <i class="fa fa-sign-in-alt" style="margin-right: 5px;"></i>
+                <span>Anasayfaya Dön</span>
+            </a>
+        </div>
+    </nav>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+        <div class="change-profile">
+            <div id="first">
+                <h4 class="hood">Profili Düzenle</h4>
+                <hr class="hood-under">
+                <form class="change-profile-form">
+                    <input type="text" class="change-input change-name" placeholder="İsim..." value="Yazılımcı"><br>
+                    <input type="text" class="change-input change-lastname" placeholder="Soyisim..." value="Rehberi"><br>
+                    <input type="email" class="change-input change-email" placeholder="E-Posta..." value="yazılımcırehberi@gmail.com" disabled><br>
+                    <button class="update-button profile-update">Güncelle</button>
+                </form>
+            </div>
+            <!-- Resim Değiştir -->
+            <div id="second">
+                <h4 class="hood">Resim Değiştir</h4>
+                <hr class="hood-under">
+                <form class="change-img-form">
+                    <img src="Logo.png" class="preview-img">
+                    <input type="file" class="change-input change-img">
+                    <button class="update-button img-update">Güncelle</button>
+                </form>
+            </div>
+            <!-- Şifre Değiştir -->
+            <div id="thirth">
+                <h4 class="hood">Şifre Değiştir</h4>
+                <hr class="hood-under">
+                <form class="change-pass-form">
+                    <input type="text" class="change-input have-pass" placeholder="Şifreniz..."><br>
+                    <input type="text" class="change-input change-pass" placeholder="Yeni Şifreniz..."><br>
+                    <input type="text" class="change-input conf-pass" placeholder="Şifreyi Onaylayın..."><br>
+                    <button class="update-button pass-update">Güncelle</button>
+                </form>
+            </div>
+            <!-- Ödeme Yöntemi -->
+            <div id="fourth">
+                <h4 class="hood">Ödeme Yöntemi</h4>
+                <hr class="hood-under">
+                <form class="change-paid-form">
+
+                    <button class="update-button paid-update">Güncelle</button>
+                </form>
+            </div>
+
+            <button class="update-button all-update">Hepsini Güncelle</button>
+        </div>
+
+    </main>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<script>
+    $("#close-sidebar").click(function() {
+        $(".page-wrapper").removeClass("toggled");
+    });
+    $("#show-sidebar").click(function() {
+        $(".page-wrapper").addClass("toggled");
+    });
+</script>
 {% endblock body %}
