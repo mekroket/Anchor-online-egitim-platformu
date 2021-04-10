@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
 {% block body %}
+{% include "includes/navbar.html" %}
 <main id="main">
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
@@ -104,4 +106,5 @@
     </section><!-- End Testimonials Section -->
 
   </main><!-- End #main -->
+{% include "includes/footer.html" %}
 {% endblock body %}
