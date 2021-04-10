@@ -10,7 +10,7 @@ def profil_guncelle(request):
         form = ProfilDuzenlemeForm(request.POST, request.FILES,instance = request.user)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Profil Güncellendi.')
+            
     else:
         form = ProfilDuzenlemeForm(instance = request.user)
     return render(request, 'pages/profil.html', context={
