@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
-{% include "includes/navbar.html" %}
+
 {% block body %}
+{% include "includes/navbar.html" %}
 {% include "includes/message.html" %}
 {% load crispy_forms_tags %}
 <main>
@@ -32,5 +33,5 @@
   </main>
  
 
-
+{% include "includes/footer.html" %}
 {% endblock body %}
