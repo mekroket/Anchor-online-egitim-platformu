@@ -1,4 +1,7 @@
-{% extends "base.html" %} {% load static %} {% block body %}
+{% extends "base.html" %} 
+{% load static %}
+{% include "includes/navbar.html" %}
+ {% block body %}
 
 <div class="main">
     <div class="video">
@@ -335,3 +338,4 @@
     </script>
 
     {% endblock body %}
+    {% include "includes/footer.html" %}
