@@ -14,6 +14,25 @@ Aşağıdaki linki clone yaparak bilgisayarınızda kodları inceleyebilir,çal�
 ```
 https://github.com/mekroket/Anchor.git
 ```
+
+### Ortam Değişkenleri (Environment Variables)
+Güvenlik için, hassas bilgiler ortam değişkenlerinde saklanır. Başlamak için:
+
+1. `.env.example` dosyasını `.env` olarak kopyalayın:
+```bash
+cp .env.example .env
+```
+
+2. `.env` dosyasını düzenleyerek kendi SECRET_KEY'inizi ekleyin:
+```bash
+# Yeni bir secret key oluşturmak için:
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+```
+
+3. Oluşan anahtarı `.env` dosyasına ekleyin:
+```
+SECRET_KEY=your-generated-secret-key-here
+```
 ## Usage
 Proje içerisinde çok fazla eklenti olduğu için bilgisayarınıza gerekli modülleri yüklemeniz gerekmekte.
 
